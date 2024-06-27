@@ -11,3 +11,7 @@ df = pd.read_excel(xlsb_file_path, engine='pyxlsb')
 df.to_excel(xlsx_file_path, index=False, engine='openpyxl')
 
 print(f"File converted and saved to {xlsx_file_path}")
+
+
+# non null count and data type
+df.info()
